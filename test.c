@@ -1,11 +1,10 @@
 #include<stdio.h>
-void func()
-{
-extern int a=10;
+int a;
+void func(){
+  extern int a;
+  a=10;
 }
-void main()
-{
-func();
-
-printf("%d",a);
+void main(){
+  func();
+  printf("%d",a);
 }
